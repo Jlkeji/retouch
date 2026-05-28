@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background">
+
+        <com.dfjk.retouch.photo.MaskCanvasView
+            android:id="@+id/maskCanvasView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/btnUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="撤销"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btnHD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="高清"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:layout_margin="4dp" />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="分享"
+            android:textColor="@color/white"
+            android:background="@drawable/button_bg"
+            android:layout_margin="4dp" />
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/bannerAdView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+
+</LinearLayout>

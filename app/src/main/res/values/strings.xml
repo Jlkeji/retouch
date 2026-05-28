@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Retouch - 照片视频修复大师</string>
+    <string name="permissions_required">需要存储和摄像头权限</string>
+    <string name="edit_photo">编辑照片</string>
+    <string name="process_video">处理视频</string>
+    <string name="membership">会员/设置</string>
+    <string name="undo">撤销</string>
+    <string name="save">保存</string>
+    <string name="share">分享</string>
+    <string name="hd_export">高清导出</string>
+</resources>

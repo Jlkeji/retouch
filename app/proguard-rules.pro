@@ -1,0 +1,5 @@
+-keep class com.google.android.gms.ads.** { *; }
+-keep class com.google.android.ump.** { *; }
+-keepattributes *Annotation*
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Service
