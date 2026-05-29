@@ -6,7 +6,7 @@ import android.graphics.Color
 class RetouchEngine {
 
     fun processImage(source: Bitmap, mask: Bitmap): Bitmap {
-        val result = source.copy(source.config, true)
+        val result = source.copy(source.config ?: Bitmap.Config.ARGB_8888, true)
         val width = source.width
         val height = source.height
 
@@ -120,7 +120,7 @@ class RetouchEngine {
         targetY: Int,
         radius: Int
     ): Bitmap {
-        val result = source.copy(source.config, true)
+        val result = source.copy(source.config ?: Bitmap.Config.ARGB_8888, true)
 
         for (dy in -radius..radius) {
             for (dx in -radius..radius) {
